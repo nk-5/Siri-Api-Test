@@ -14,6 +14,12 @@
 		969525F51D1520B000F77D6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 969525F31D1520B000F77D6B /* LaunchScreen.storyboard */; };
 		969526001D1520B000F77D6B /* HelloSiriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969525FF1D1520B000F77D6B /* HelloSiriTests.swift */; };
 		9695260B1D1520B000F77D6B /* HelloSiriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9695260A1D1520B000F77D6B /* HelloSiriUITests.swift */; };
+		9695261F1D1523FE00F77D6B /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9695261E1D1523FE00F77D6B /* IntentHandler.swift */; };
+		969526281D1523FE00F77D6B /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 969526271D1523FE00F77D6B /* IntentsUI.framework */; };
+		9695262B1D1523FE00F77D6B /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9695262A1D1523FE00F77D6B /* IntentViewController.swift */; };
+		9695262E1D1523FE00F77D6B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9695262C1D1523FE00F77D6B /* MainInterface.storyboard */; };
+		969526321D1523FE00F77D6B /* HelloSiriINExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 969526251D1523FE00F77D6B /* HelloSiriINExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		969526351D1523FE00F77D6B /* HelloSiriINExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9695261C1D1523FD00F77D6B /* HelloSiriINExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +37,36 @@
 			remoteGlobalIDString = 969525E61D1520B000F77D6B;
 			remoteInfo = HelloSiri;
 		};
+		969526301D1523FE00F77D6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 969525DF1D1520B000F77D6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 969526241D1523FE00F77D6B;
+			remoteInfo = HelloSiriINExtensionUI;
+		};
+		969526331D1523FE00F77D6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 969525DF1D1520B000F77D6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9695261B1D1523FD00F77D6B;
+			remoteInfo = HelloSiriINExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9695263C1D1523FE00F77D6B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				969526321D1523FE00F77D6B /* HelloSiriINExtensionUI.appex in Embed App Extensions */,
+				969526351D1523FE00F77D6B /* HelloSiriINExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		969525E71D1520B000F77D6B /* HelloSiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloSiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +82,14 @@
 		969526061D1520B000F77D6B /* HelloSiriUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloSiriUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9695260A1D1520B000F77D6B /* HelloSiriUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloSiriUITests.swift; sourceTree = "<group>"; };
 		9695260C1D1520B000F77D6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9695261C1D1523FD00F77D6B /* HelloSiriINExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HelloSiriINExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9695261E1D1523FE00F77D6B /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		969526201D1523FE00F77D6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		969526251D1523FE00F77D6B /* HelloSiriINExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HelloSiriINExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		969526271D1523FE00F77D6B /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		9695262A1D1523FE00F77D6B /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		9695262D1D1523FE00F77D6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		9695262F1D1523FE00F77D6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +114,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		969526191D1523FD00F77D6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		969526221D1523FE00F77D6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				969526281D1523FE00F77D6B /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +138,9 @@
 				969525E91D1520B000F77D6B /* HelloSiri */,
 				969525FE1D1520B000F77D6B /* HelloSiriTests */,
 				969526091D1520B000F77D6B /* HelloSiriUITests */,
+				9695261D1D1523FE00F77D6B /* HelloSiriINExtension */,
+				969526291D1523FE00F77D6B /* HelloSiriINExtensionUI */,
+				969526261D1523FE00F77D6B /* Frameworks */,
 				969525E81D1520B000F77D6B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +151,8 @@
 				969525E71D1520B000F77D6B /* HelloSiri.app */,
 				969525FB1D1520B000F77D6B /* HelloSiriTests.xctest */,
 				969526061D1520B000F77D6B /* HelloSiriUITests.xctest */,
+				9695261C1D1523FD00F77D6B /* HelloSiriINExtension.appex */,
+				969526251D1523FE00F77D6B /* HelloSiriINExtensionUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +188,33 @@
 			path = HelloSiriUITests;
 			sourceTree = "<group>";
 		};
+		9695261D1D1523FE00F77D6B /* HelloSiriINExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9695261E1D1523FE00F77D6B /* IntentHandler.swift */,
+				969526201D1523FE00F77D6B /* Info.plist */,
+			);
+			path = HelloSiriINExtension;
+			sourceTree = "<group>";
+		};
+		969526261D1523FE00F77D6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				969526271D1523FE00F77D6B /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		969526291D1523FE00F77D6B /* HelloSiriINExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				9695262A1D1523FE00F77D6B /* IntentViewController.swift */,
+				9695262C1D1523FE00F77D6B /* MainInterface.storyboard */,
+				9695262F1D1523FE00F77D6B /* Info.plist */,
+			);
+			path = HelloSiriINExtensionUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +225,13 @@
 				969525E31D1520B000F77D6B /* Sources */,
 				969525E41D1520B000F77D6B /* Frameworks */,
 				969525E51D1520B000F77D6B /* Resources */,
+				9695263C1D1523FE00F77D6B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				969526311D1523FE00F77D6B /* PBXTargetDependency */,
+				969526341D1523FE00F77D6B /* PBXTargetDependency */,
 			);
 			name = HelloSiri;
 			productName = HelloSiri;
@@ -181,6 +274,40 @@
 			productReference = 969526061D1520B000F77D6B /* HelloSiriUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		9695261B1D1523FD00F77D6B /* HelloSiriINExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 969526391D1523FE00F77D6B /* Build configuration list for PBXNativeTarget "HelloSiriINExtension" */;
+			buildPhases = (
+				969526181D1523FD00F77D6B /* Sources */,
+				969526191D1523FD00F77D6B /* Frameworks */,
+				9695261A1D1523FD00F77D6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloSiriINExtension;
+			productName = HelloSiriINExtension;
+			productReference = 9695261C1D1523FD00F77D6B /* HelloSiriINExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		969526241D1523FE00F77D6B /* HelloSiriINExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 969526361D1523FE00F77D6B /* Build configuration list for PBXNativeTarget "HelloSiriINExtensionUI" */;
+			buildPhases = (
+				969526211D1523FE00F77D6B /* Sources */,
+				969526221D1523FE00F77D6B /* Frameworks */,
+				969526231D1523FE00F77D6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloSiriINExtensionUI;
+			productName = HelloSiriINExtensionUI;
+			productReference = 969526251D1523FE00F77D6B /* HelloSiriINExtensionUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,6 +338,18 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 969525E61D1520B000F77D6B;
 					};
+					9695261B1D1523FD00F77D6B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = JYRE3XJ5BJ;
+						DevelopmentTeamName = "adingo,Inc.";
+						ProvisioningStyle = Automatic;
+					};
+					969526241D1523FE00F77D6B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = JYRE3XJ5BJ;
+						DevelopmentTeamName = "adingo,Inc.";
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 969525E21D1520B000F77D6B /* Build configuration list for PBXProject "HelloSiri" */;
@@ -229,6 +368,8 @@
 				969525E61D1520B000F77D6B /* HelloSiri */,
 				969525FA1D1520B000F77D6B /* HelloSiriTests */,
 				969526051D1520B000F77D6B /* HelloSiriUITests */,
+				9695261B1D1523FD00F77D6B /* HelloSiriINExtension */,
+				969526241D1523FE00F77D6B /* HelloSiriINExtensionUI */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +396,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9695261A1D1523FD00F77D6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		969526231D1523FE00F77D6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9695262E1D1523FE00F77D6B /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +442,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		969526181D1523FD00F77D6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9695261F1D1523FE00F77D6B /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		969526211D1523FE00F77D6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9695262B1D1523FE00F77D6B /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -298,6 +470,16 @@
 			isa = PBXTargetDependency;
 			target = 969525E61D1520B000F77D6B /* HelloSiri */;
 			targetProxy = 969526071D1520B000F77D6B /* PBXContainerItemProxy */;
+		};
+		969526311D1523FE00F77D6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 969526241D1523FE00F77D6B /* HelloSiriINExtensionUI */;
+			targetProxy = 969526301D1523FE00F77D6B /* PBXContainerItemProxy */;
+		};
+		969526341D1523FE00F77D6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9695261B1D1523FD00F77D6B /* HelloSiriINExtension */;
+			targetProxy = 969526331D1523FE00F77D6B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -316,6 +498,14 @@
 				969525F41D1520B000F77D6B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9695262C1D1523FE00F77D6B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9695262D1D1523FE00F77D6B /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -413,6 +603,7 @@
 		969526101D1520B000F77D6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HelloSiri/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -425,6 +616,7 @@
 		969526111D1520B000F77D6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HelloSiri/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -484,6 +676,54 @@
 			};
 			name = Release;
 		};
+		969526371D1523FE00F77D6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HelloSiriINExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.fluct.HelloSiri.HelloSiriINExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		969526381D1523FE00F77D6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HelloSiriINExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.fluct.HelloSiri.HelloSiriINExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9695263A1D1523FE00F77D6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HelloSiriINExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.fluct.HelloSiri.HelloSiriINExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9695263B1D1523FE00F77D6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HelloSiriINExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.fluct.HelloSiri.HelloSiriINExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -517,6 +757,22 @@
 			buildConfigurations = (
 				969526161D1520B000F77D6B /* Debug */,
 				969526171D1520B000F77D6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		969526361D1523FE00F77D6B /* Build configuration list for PBXNativeTarget "HelloSiriINExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				969526371D1523FE00F77D6B /* Debug */,
+				969526381D1523FE00F77D6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		969526391D1523FE00F77D6B /* Build configuration list for PBXNativeTarget "HelloSiriINExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9695263A1D1523FE00F77D6B /* Debug */,
+				9695263B1D1523FE00F77D6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
