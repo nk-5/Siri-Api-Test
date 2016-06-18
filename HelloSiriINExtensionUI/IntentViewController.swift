@@ -19,7 +19,11 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+//        INPreferences.requestSiriAuthorization { (INSiriAuthorizationStatus) in
+//            print("Siri is Booting")
+//        }
+        // Do any additional setup after loading the view.:w
     }
     
     override func didReceiveMemoryWarning() {

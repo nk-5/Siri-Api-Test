@@ -19,13 +19,37 @@ import Intents
 // "Cancel my workout using <myApp>"
 // "End my workout using <myApp>"
 
-class IntentHandler: INExtension, INStartWorkoutIntentHandling, INPauseWorkoutIntentHandling, INResumeWorkoutIntentHandling, INCancelWorkoutIntentHandling, INEndWorkoutIntentHandling {
+class IntentHandler: INExtension, INSearchForPhotosIntentHandling, INStartWorkoutIntentHandling, INPauseWorkoutIntentHandling, INResumeWorkoutIntentHandling, INCancelWorkoutIntentHandling, INEndWorkoutIntentHandling {
     
     override func handler(for intent: INIntent) -> AnyObject {
         // This is the default implementation.  If you want different objects to handle different intents,
         // you can override this and return the handler you want for that particular intent.
         
         return self
+    }
+    
+//    func handle(showBannerAd intent:)
+    
+//    func handle(showBannerAd intent: INShowBannerAdIntent, completion: (INShowBannerAdIntentResponse) -> Void) {
+//        let userActivity = NSUserActivity(activityType: NSStringFromClass(INShowBannerAdIntent))
+//        let response = INShowBannerAdIntentResponse(code: .success, userActivity: userActivity)
+//        // Do the work…
+////        self.startWorkout(startWorkoutIntent.workoutName!)
+//        completion(response)
+//    }
+    
+    func handle(searchForPhotos intent: INSearchForPhotosIntent, completion: (INSearchForPhotosIntentResponse) -> Void) {
+        print("Search Photos intent is being handled.")
+        let userActivity = NSUserActivity(activityType: NSStringFromClass(INSearchForPhotosIntent))
+        let response = INSearchForPhotosIntentResponse(code: .success, userActivity: userActivity)
+        completion(response)
+    }
+    
+    func handle(sendMessage intent: INSendMessageIntent, completion: (INSendMessageIntentResponse) -> Void) {
+        print("Message intent is being handled.")
+        let userActivity = NSUserActivity(activityType: NSStringFromClass(INSendMessageIntent))
+        let response = INSendMessageIntentResponse(code: .success, userActivity: userActivity)
+        completion(response)
     }
     
     // MARK: - INStartWorkoutIntentHandling

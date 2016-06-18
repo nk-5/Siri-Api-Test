@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		967EA6521D15628400AA697B /* AppIntentVocabulary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 967EA6501D15628400AA697B /* AppIntentVocabulary.plist */; };
+		967EA6541D15736C00AA697B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967EA6531D15736C00AA697B /* CoreLocation.framework */; };
+		967EA6561D15806700AA697B /* INShowBannerAdIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967EA6551D15806700AA697B /* INShowBannerAdIntent.swift */; };
+		967EA6581D1583D200AA697B /* INShowBannerAdIntentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967EA6571D1583D200AA697B /* INShowBannerAdIntentResponse.swift */; };
 		969525EB1D1520B000F77D6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969525EA1D1520B000F77D6B /* AppDelegate.swift */; };
 		969525ED1D1520B000F77D6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969525EC1D1520B000F77D6B /* ViewController.swift */; };
 		969525F01D1520B000F77D6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 969525EE1D1520B000F77D6B /* Main.storyboard */; };
@@ -69,6 +73,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		967EA6511D15628400AA697B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = HelloSiri/Base.lproj/AppIntentVocabulary.plist; sourceTree = "<group>"; };
+		967EA6531D15736C00AA697B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		967EA6551D15806700AA697B /* INShowBannerAdIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INShowBannerAdIntent.swift; sourceTree = "<group>"; };
+		967EA6571D1583D200AA697B /* INShowBannerAdIntentResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INShowBannerAdIntentResponse.swift; sourceTree = "<group>"; };
 		969525E71D1520B000F77D6B /* HelloSiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloSiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		969525EA1D1520B000F77D6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		969525EC1D1520B000F77D6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967EA6541D15736C00AA697B /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +144,7 @@
 		969525DE1D1520B000F77D6B = {
 			isa = PBXGroup;
 			children = (
+				967EA6501D15628400AA697B /* AppIntentVocabulary.plist */,
 				969525E91D1520B000F77D6B /* HelloSiri */,
 				969525FE1D1520B000F77D6B /* HelloSiriTests */,
 				969526091D1520B000F77D6B /* HelloSiriUITests */,
@@ -193,6 +203,8 @@
 			children = (
 				9695261E1D1523FE00F77D6B /* IntentHandler.swift */,
 				969526201D1523FE00F77D6B /* Info.plist */,
+				967EA6551D15806700AA697B /* INShowBannerAdIntent.swift */,
+				967EA6571D1583D200AA697B /* INShowBannerAdIntentResponse.swift */,
 			);
 			path = HelloSiriINExtension;
 			sourceTree = "<group>";
@@ -200,6 +212,7 @@
 		969526261D1523FE00F77D6B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				967EA6531D15736C00AA697B /* CoreLocation.framework */,
 				969526271D1523FE00F77D6B /* IntentsUI.framework */,
 			);
 			name = Frameworks;
@@ -381,6 +394,7 @@
 			files = (
 				969525F51D1520B000F77D6B /* LaunchScreen.storyboard in Resources */,
 				969525F21D1520B000F77D6B /* Assets.xcassets in Resources */,
+				967EA6521D15628400AA697B /* AppIntentVocabulary.plist in Resources */,
 				969525F01D1520B000F77D6B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,7 +460,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967EA6561D15806700AA697B /* INShowBannerAdIntent.swift in Sources */,
 				9695261F1D1523FE00F77D6B /* IntentHandler.swift in Sources */,
+				967EA6581D1583D200AA697B /* INShowBannerAdIntentResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +500,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		967EA6501D15628400AA697B /* AppIntentVocabulary.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				967EA6511D15628400AA697B /* Base */,
+			);
+			name = AppIntentVocabulary.plist;
+			sourceTree = "<group>";
+		};
 		969525EE1D1520B000F77D6B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -743,6 +767,7 @@
 				969526111D1520B000F77D6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		969526121D1520B000F77D6B /* Build configuration list for PBXNativeTarget "HelloSiriTests" */ = {
 			isa = XCConfigurationList;
@@ -751,6 +776,7 @@
 				969526141D1520B000F77D6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		969526151D1520B000F77D6B /* Build configuration list for PBXNativeTarget "HelloSiriUITests" */ = {
 			isa = XCConfigurationList;
@@ -759,6 +785,7 @@
 				969526171D1520B000F77D6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		969526361D1523FE00F77D6B /* Build configuration list for PBXNativeTarget "HelloSiriINExtensionUI" */ = {
 			isa = XCConfigurationList;
@@ -767,6 +794,7 @@
 				969526381D1523FE00F77D6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		969526391D1523FE00F77D6B /* Build configuration list for PBXNativeTarget "HelloSiriINExtension" */ = {
 			isa = XCConfigurationList;
@@ -775,6 +803,7 @@
 				9695263B1D1523FE00F77D6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

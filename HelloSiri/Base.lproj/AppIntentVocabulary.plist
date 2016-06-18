@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IntentPhrases</key>
+	<array>
+		<dict>
+			<key>IntentName</key>
+			<string>INShowBannerAdIntent</string>
+			<key>IntentExamples</key>
+			<array>
+				<string>Siri, show banner ad from FluctSDK</string>
+			</array>
+		</dict>
+	</array>
+	<key>ParameterVocabularies</key>
+	<array>
+		<dict>
+			<key>ParameterVocabulary</key>
+			<array>
+				<dict>
+					<key>VocabularyItemIdentifier</key>
+					<string>banner_ad</string>
+					<key>VocabularyItemSynonyms</key>
+					<array>
+						<dict>
+							<key>VocabularyItemExamples</key>
+							<array>
+								<string>Fluct バナー広告</string>
+								<string>Fluct Banner Ad</string>
+								<string>show FluctSDK Banner Ad</string>
+							</array>
+							<key>VocabularyItemPhrase</key>
+							<string>FluctSDK Banner Ad</string>
+							<key>VocabularyItemPronunciation</key>
+							<string>フラクトSDK バナー広告</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>ParameterNames</key>
+			<array>
+				<string>INShowBannerAdIntent.bannerAdName</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

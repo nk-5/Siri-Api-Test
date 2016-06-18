@@ -30,6 +30,8 @@
 			<array/>
 			<key>IntentsSupported</key>
 			<array>
+				<string>INSearchForPhotosIntent</string>
+				<string>INSendMessageIntent</string>
 				<string>INStartWorkoutIntent</string>
 				<string>INPauseWorkoutIntent</string>
 				<string>INResumeWorkoutIntent</string>
